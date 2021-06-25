@@ -1,0 +1,56 @@
+<!--
+ * @Author: huz
+ * @Date: 2021-06-22 11:34:26
+ * @LastEditors: huz
+ * @LastEditTime: 2021-06-22 16:43:41
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        html,body {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            /* display: flex;
+            justify-content: center;
+
+
+            align-items: center; */
+        }
+        .my {
+            position: absolute;
+            /* top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0; */
+            /* width: 100px;*/
+            /* height: 2000px;  */
+            /* margin: auto; */
+            background-color: aqua;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="my">231</div>
+
+    <script>
+        document.addEventListener('scroll',this.scrollLoad)
+        function scrollLoad(){
+            let allHeight = document.documentElement.scrollHeight
+            let clientHeight = document.documentElement.clientHeight
+            let scrollTop = document.documentElement.scrollTop
+            console.log('allHeight', allHeight)
+            console.log('clientHeight', clientHeight)
+            console.log('scrollTop', scrollTop)
+        }
+    </script>
+</body>
+
+</html>
